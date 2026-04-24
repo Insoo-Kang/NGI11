@@ -1396,6 +1396,7 @@ if __name__ == "__main__":
                 
             # 파일명 추출 (확장자 제외) 및 폴더명 동적 생성
             image_name = os.path.splitext(os.path.basename(_image_path))[0]
+            image_name = image_name.replace("Small Square", "Small_Square")
             _DEFAULT_OUT = str(_workspace_root / "Data" / "SEM" / f"SEM_Results_{image_name}")
 
             try:
@@ -1429,6 +1430,7 @@ if __name__ == "__main__":
 
             # 파일명 추출 및 폴더명/모델 경로 동적 생성
             image_name = os.path.splitext(os.path.basename(_image_path))[0]
+            image_name = image_name.replace("Small Square", "Small_Square")
             _DEFAULT_OUT = str(_workspace_root / "Data" / "SEM" / f"SEM_Results_{image_name}")
             _MODEL_PATH  = os.path.join(_DEFAULT_OUT, "crystal_cnn.pth")
 
