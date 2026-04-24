@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile \"Code/SEM/SEM_Crystal_Analyzer.py\")",
+      "Bash(python \"c:/NGI_Nintendanib/Code/SEM/SEM_Crystal_Analyzer.py\" --help)",
+      "Bash(python.exe -c ':*)",
+      "Bash(where python:*)",
+      "Bash(py --version)",
+      "Bash(py -c \"print\\('hi'\\)\")",
+      "Bash(/c/Users/AI_Pharm_204/AppData/Local/Microsoft/WindowsApps/python.exe -c ':*)",
+      "Bash(cmd.exe /c \"cd /d c:\\\\NGI_Nintendanib && python -c \\\\\"import ast; src=open\\('Code/SEM/SEM_Crystal_Analyzer.py',encoding='utf-8'\\).read\\(\\); ast.parse\\(src\\); print\\('OK'\\)\\\\\" 2>&1\")"
+    ]
+  }
+}
